@@ -9,3 +9,43 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+body{
+    background-color: #FFF8F0;
+    font-family: "Lato", sans-serif;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/* HOME PAGE */
+/* hero */
+.business-name{
+    font-family: "Lobster", sans-serif;
+    font-size: 10rem;
+}
+
+img[alt="tshirtImage"]{
+    width: 20rem;
+}
+
+.business-description-container{
+    display: flex;
+}
+
+.description-item{
+    width: 50%;
+}
+
+.description-text p{
+    width: 70%;
+    margin-top: 3rem;
+}
+
+.description-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
