@@ -179,4 +179,10 @@ img[alt="tshirtImage"] {
 
 .card {
   margin: 4rem auto;
+  width: 18rem;
 }
+
+/* .card img{
+  width: 4rem;
+
+} */
