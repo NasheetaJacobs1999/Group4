@@ -5,75 +5,78 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-    --background: #fff8f0;
-    --textColor:#ffffff;
-    --primary:#000000;
-    --secondary:#727272;
-    --body:#c0c0c0;
-    --contentPrimary:#524fff;
-    --contentSecondary:#ffc900;
-    --accentPrimary:#524fff;
-    --accentSecondary:#ffc900;
+
+:root {
+  --background: #fff8f0;
+  --textColor: #ffffff;
+  --primary: #000000;
+  --secondary: #727272;
+  --body: #c0c0c0;
+  --contentPrimary: #524fff;
+  --contentSecondary: #ffc900;
+  --accentPrimary: #524fff;
+  --accentSecondary: #ffc900;
 }
+
 /* How to remove a scrolbar */
 ::-webkit-scrollbar {
   display: none;
 }
 
-.header{
-    display: flex;
-    flex: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width:100vw;
-    height: 80px;
-    background-color: var(--primary);
-}
-.logo{
-    position: absolute;
-    left:0;
-    top:0;
-    /* background-color: var(--accentPrimary); */
-}
-.logo img{
-    width: 100px;
-    height: 80px;
-}
-ul{
-    list-style-type:none;
-}
-li{
-    display: inline;
-}
-li a{
-    text-decoration: none;
-    color:var(--textColor);
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    margin:0 5px 0 5px;
-
-    &:hover{
-        color: var(--accentPrimary);
-    }
-}
-
-
-body{
-    background-color: #FFF8F0;
-    font-family: "Lato", sans-serif; 
-}
 
 body {
   background-color: var(--background);
   font-family: "Lato", sans-serif;
 }
 
+/* HOME PAGE */
+/* header */
+.header {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--primary);
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background-color: var(--accentPrimary); */
+}
+
+.logo img {
+  width: 100px;
+  height: 80px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0 5px 0 5px;
+
+  &:hover {
+    color: var(--accentPrimary);
+  }
+}
+
 .center-text {
   text-align: center;
 }
 
-/* HOME PAGE */
 /* hero */
 .business-name {
   font-family: "Lobster", sans-serif;
@@ -108,7 +111,7 @@ img[alt="tshirtImage"] {
   margin: 5rem auto;
 }
 
-/* sample products section */
+/* example products section */
 #sample-products {
   margin-top: 7rem;
 }
@@ -161,7 +164,6 @@ img[alt="tshirtImage"] {
   grid-row: 2;
 }
 
-/* design your shirt section */
 #design-shirt-section {
   margin-top: 7rem;
 }
