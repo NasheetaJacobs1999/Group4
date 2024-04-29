@@ -1,11 +1,12 @@
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root{
+    --background: #fff8f0;
     --textColor:#ffffff;
     --primary:#000000;
     --secondary:#727272;
@@ -16,8 +17,8 @@
     --accentSecondary:#ffc900;
 }
 /* How to remove a scrolbar */
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
 .header{
@@ -60,40 +61,120 @@ li a{
 
 body{
     background-color: #FFF8F0;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif; 
 }
 
-.center-text{
-    text-align: center;
+body {
+  background-color: var(--background);
+  font-family: "Lato", sans-serif;
+}
+
+.center-text {
+  text-align: center;
 }
 
 /* HOME PAGE */
 /* hero */
-.business-name{
-    font-family: "Lobster", sans-serif;
-    font-size: 10rem;
+.business-name {
+  font-family: "Lobster", sans-serif;
+  font-size: 10rem;
 }
 
-img[alt="tshirtImage"]{
-    width: 20rem;
+img[alt="tshirtImage"] {
+  width: 20rem;
 }
 
-.business-description-container{
-    display: flex;
+.business-description-container {
+  display: flex;
 }
 
-.description-item{
-    width: 50%;
+.description-item {
+  width: 50%;
 }
 
-.description-text p{
-    width: 70%;
-    margin-top: 3rem;
+.description-text p {
+  width: 70%;
+  margin-top: 3rem;
 }
 
-.description-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.description-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#business-description {
+  margin: 5rem auto;
+}
+
+/* sample products section */
+#sample-products {
+  margin-top: 7rem;
+}
+
+.sample-image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 4rem 8rem;
+  gap: 10px;
+}
+
+.sample1 {
+  grid-column: 4 / 5;
+  grid-row: 2;
+}
+
+.sample2 {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.sample3 {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+.sample4 {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.sample5 {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.sample6 {
+  grid-column: 4 / 5;
+  grid-row: 1;
+}
+
+.sample7 {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+/* design your shirt section */
+#design-shirt-section {
+  margin-top: 7rem;
+}
+
+.see-designs-btn {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.card-body {
+  background-color: var(--background);
+}
+
+.card {
+  margin: 4rem auto;
 }
